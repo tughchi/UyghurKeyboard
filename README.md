@@ -6,6 +6,24 @@ UyghurKeyboard
 在这个项目中你可以不需要让用户安装任何第三方输入法，完全可以达到输入维吾尔文的目标。
 
 你可以把com.zerak.keyboard 做成一个AndroidLib项目
+-----------------------------------------------------------------
+如果用户点击【返回】后 隐藏输入法，想再次点击输入框的弹出输入法，你就添加下面的代码就可以了
+	medit.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+			
+				if(keyboard!=null&&!keyboard.isShowing())
+				{
+					keyboard.showKeyboard();
+				}
+			}
+	});
+		
+
+
+</br>
+</br>
 
 欢迎开发者合作我公司.....
 
